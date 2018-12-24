@@ -5,4 +5,4 @@ Todos los datos pueden sustituidos de acuerdo a tus necesidades (Universidad, fa
 ------
 
 This template is made for everyone who wants to make university dissertations in LaTeX.
-All datda can be replaced according to your needs (University, Faculty, etc...)
+All data can be replaced according to your needs (University, Faculty, etc...)
