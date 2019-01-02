@@ -26,7 +26,7 @@
 % --- ENCABEZADO ---
 \usepackage{fancyhdr}
 \fancyhead[R]{**INTRODUCIR ASIGNATURA**}\fancyhead[L]{\today} % Rellenar con la asignatura del trabajo a realizar
-\fancyfoot[C]{\thepage} \pagestyle{fancy}
+\fancyfoot[C]{\rule{1cm}{0.5mm}\\\thepage} \pagestyle{fancy}
 % --- END ENCABEZADO ---
 
 
@@ -84,6 +84,7 @@
 
 \newpage
 % --- INDICE ---
+\thispagestyle{empty}
 \pagenumbering{gobble} % No se numera la pagina del indice
 \renewcommand*\contentsname{Índice de contenidos} % Nombre del indice (a elegir por el creador)
 \tableofcontents
