@@ -17,5 +17,5 @@ If it's necessary, you can dissable Index page, by deleting or commenting a coup
 
 
 ## TO-DO
-- Translate all to english
+- Translate everything to english
 - Create new small-template
