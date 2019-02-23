@@ -1,12 +1,10 @@
 \documentclass[12pt,a4paper, spanish]{article}
 \usepackage[spanish]{babel}
 \usepackage{setspace}
-\usepackage{float} % Usado par aponer imagenes una al lado de la otra
-\usepackage[ % Informacion del usuario en los metadatos del pdf creado (CAMBIAR POR EL USUARIO)
+\usepackage[
   pdftex,
-  pdfauthor={AUTOR DEL DOCUMENTO},
-  pdftitle={TITULO DEL DOCUMENTO},
-  pdfsubject={ASUNTO DEL DOCUMENTO}]{hyperref}
+  pdfauthor={--- AUTHOR NAME ---},
+  pdftitle={--- DOCUMENT TITLE ---}]{hyperref}
 
 % --- IMAGES ---
 \usepackage[pdftex]{graphicx}
@@ -23,15 +21,35 @@
 \setlength{\headheight}{15pt}
 % --- MARGIN DIMENSIONS ---
 
+% --- TITLE DATA ---
+\title{\textbf{--- TITLE ---} \\
+       \textsc{--- SUBJECT ---} \\
+       \emph{--- DEPARTMENT ---}}
+\author{\emph{--- AUTHOR ---}}
+\date{\underline{\today}}
+% --- TITLE DATA ---
+
 
 % --- DOCUMENT ---
 \begin{document}
 
-% --- TITLE PAGE ---
-\begin{titlepage}
+% --- TITLE ---
+\maketitle
+\thispagestyle{empty}
+\pagenumbering{gobble}
+\renewcommand*\contentsname{Index of contents}
+\tableofcontents
+\pagebreak
+% --- TITLE ---
 
-\end{titlepage}
-% --- TITLE PAGE ---
+\pagenumbering{arabic}
+
+\section{SECTION 1}
+\subsection{SUBSECTION 1}
+
+
+Here is where you write :D
+
 
 \end{document}
 % --- DOCUMENT ---

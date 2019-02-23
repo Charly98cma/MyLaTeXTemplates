@@ -7,15 +7,10 @@ All data can be replaced according to your needs (University, Faculty, etc...).
 
 ## Big-Dissertations
 
-This ones are made for big academic works, like longs reports abouts projects.
+This one are made for big academic works, like long reports abouts projects.
 Logos and big title page.
+Despite logos are from Polytechnic University of Madrid and Escuela Tecnica Superior de Ingenieros Informaticos, they can be replaced with yours, just change the directory.
 
 ## Small-Dissertations
 
-This ones are made for small or medium works, a couple of pages, with a minimalistic title page, without logos.
-If it's necessary, you can dissable Index page, by deleting or commenting a couple of lines.
-
-
-## TO-DO
-- Translate all to english
-- Create new small-template
+This ones are made for small or medium works, a couple of pages, with a minimalistic title page, index and without logos.
