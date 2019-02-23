@@ -13,4 +13,14 @@ Despite logos are from Polytechnic University of Madrid and Escuela Tecnica Supe
 
 ## Small-Dissertations
 
+<<<<<<< HEAD
 This ones are made for small or medium works, a couple of pages, with a minimalistic title page, index and without logos.
+=======
+This ones are made for small or medium works, a couple of pages, with a minimalistic title page, without logos.
+If it's necessary, you can dissable Index page, by deleting or commenting a couple of lines.
+
+
+## TO-DO
+- Translate everything to english
+- Create new small-template
+>>>>>>> 38783b20a9ccee59c44c2fc879f475fbc9c03ca9
