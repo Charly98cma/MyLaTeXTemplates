@@ -2,11 +2,14 @@
 \usepackage[english]{babel}
 \usepackage{setspace}
 \usepackage{float}
+
+% Enter the name/s of the author/s, the document title and his subject
 \usepackage[
   pdftex,
   pdfauthor={--- AUTHOR NAME ---},
   pdftitle={--- DOCUMENT TITLE ---},
   pdfsubject={--- DOCUMENT SUBJECT ---}]{hyperref}
+
 
 % --- IMAGES ---
 \usepackage[pdftex]{graphicx}
@@ -25,9 +28,12 @@
 
 % --- HEADLINE ---
 \usepackage{fancyhdr}
-\fancyhead[R]{**SUBJECT NAME**}\fancyhead[L]{\today}
+% Name of the subject this work is for
+\fancyhead[R]{* SUBJECT NAME *}\fancyhead[L]{\today}
 \fancyfoot[C]{\rule{1cm}{0.5mm}\\\thepage} \pagestyle{fancy}
 % --- HEADLINE ---
+
+
 
 % --- DOCUMENT ---
 \begin{document}
@@ -40,26 +46,33 @@
   % --- SECONDARY TITLES ---
    \textsc{}\\[0.25cm]
 
-   \textsc{\huge{** UNIVERSITY **}}\\[0.5cm]
+   % Name of your university
+   \textsc{\huge{* UNIVERSITY *}}\\[0.5cm]
 
-   \textsc{\LARGE ** FACULTY **\\ ** FACULTY **}\\[0.3cm]
+   % Name of your faculty
+   \textsc{\LARGE * FACULTY *\\ ** FACULTY *}\\[0.3cm]
 
    \begin{figure}[H]
+     % Replace this with your university logo
      \centering
      \subfloat{{\includegraphics[width=7cm]{Images/LogoUPM}}}
+     % Replace this with you faculty logo
      \qquad
      \subfloat{{\includegraphics[width=2.75cm]{Images/LogoFI}}}\\[0.5cm]
    \end{figure}
 
-   \textsc{\Large ** DEPARTMENT **}\\[0.25cm]
-   \textsc{\large ** SUBJECT **}\\[0.25cm]
+   % Name of the department to which the subject belongs.
+   \textsc{\Large * DEPARTMENT *}\\[0.25cm]
+
+   % Name of the subject
+   \textsc{\large * SUBJECT *}\\[0.25cm]
   % --- SECONDARY TITLES ---
 
   % --- MAIN TITLE ---
    \HRule\\[0.4cm]
 
-   {\huge\bfseries ** TITLE **\\[0.4cm] ** TITLE **}\\[0.4cm]
-   % Gaspi estuvo aquí y añadió la tilde.
+   % Title of this work
+   {\huge\bfseries * TITLE *\\[0.4cm] * TITLE *}\\[0.4cm]
    \HRule\\[1.25cm]
 
    % --- SEMESTER and SCHOLAR YEAR ---
@@ -69,10 +82,10 @@
    % --- AUTHORS ---
     {\large\underline{\textit{Author/s:}}}\\[0.2cm]
        \textsc{SURNAME, NAME}\\
-               Registration Number: XXXXXX\\
-       [0.5cm]
-       \textsc{SURNAME, NAME}\\
-               Registration Number: XXXXXX\\[0.5cm]
+               Registration Number: XXXXXX\\[0.2cm]
+       % To add more authors, use this pattern
+       % \textsc{SURNAME, NAME}\\
+       %        Registration Number: XXXXXX\\[0.2cm]
    % --- AUTHORS ---
 
    % --- DATE ---
