@@ -1,10 +1,14 @@
-\documentclass[12pt,a4paper, spanish]{article}
-\usepackage[spanish]{babel}
+\documentclass[12pt,a4paper, english]{article}
+\usepackage[english]{babel}
 \usepackage{setspace}
+
+% Name of the author/s and document title
 \usepackage[
   pdftex,
   pdfauthor={--- AUTHOR NAME ---},
-  pdftitle={--- DOCUMENT TITLE ---}]{hyperref}
+  pdftitle={--- DOCUMENT TITLE ---}
+]{hyperref}
+
 
 % --- IMAGES ---
 \usepackage[pdftex]{graphicx}
@@ -21,12 +25,35 @@
 \setlength{\headheight}{15pt}
 % --- MARGIN DIMENSIONS ---
 
+
 % --- TITLE DATA ---
-\title{\textbf{--- TITLE ---} \\
-       \textsc{--- SUBJECT ---} \\
-       \emph{--- DEPARTMENT ---}}
-\author{\emph{--- AUTHOR ---}}
-\date{\underline{\today}}
+\title{
+  % Title of the document
+  \textbf{* TITLE *} \\[0.5cm]
+
+  % Name of the subject
+  \textsc{* SUBJECT *} \\[0.5cm]
+
+  % Name of the department to which the subject belongs.
+  \emph{* DEPARTMENT *}\\[1cm]
+}
+
+\author{
+  \textit{\underline{Author/s:}}\\[0.2cm]
+
+  \textsc{SURNAME, NAME}\\
+  Registration Number: XXXXXX\\[0.2cm]
+
+  % Use this pattern to add more authors:
+  %
+  % \textsc{SURNAME, NAME}\\
+  % Registration Number: XXXXXX\\[0.2cm]
+}
+
+\date{
+  \vfill\vfill\vfill
+  \underline{\today}
+}
 % --- TITLE DATA ---
 
 
@@ -34,8 +61,10 @@
 \begin{document}
 
 % --- TITLE ---
-\maketitle
+\clearpage\maketitle
 \thispagestyle{empty}
+\pagebreak
+
 \pagenumbering{gobble}
 \renewcommand*\contentsname{Index of contents}
 \tableofcontents
