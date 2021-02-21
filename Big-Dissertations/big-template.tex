@@ -1,103 +1,14 @@
-\documentclass[12pt,a4paper, english]{article}
-\usepackage[english]{babel}
-\usepackage{setspace}
-\usepackage{float}
+% The preambule includes the packages and parameters used on this document
+\include{include/preambule}
 
-% Enter the name/s of the author/s, the document title and his subject
-\usepackage[
-  pdftex,
-  pdfauthor={--- AUTHOR NAME ---},
-  pdftitle={--- DOCUMENT TITLE ---},
-  pdfsubject={--- DOCUMENT SUBJECT ---}]{hyperref}
+% Students information, such as full name, university, faculty, etc...
+\include{include/student-info}
 
-
-% --- IMAGES ---
-\usepackage[pdftex]{graphicx}
-\usepackage{subfig}
-\usepackage{graphicx}
-\usepackage[usenames,dvipsnames]{color}
-\DeclareGraphicsExtensions{.png,.jpg,.pdf,.mps,.gif,.bmp}
-% --- IMAGES ---
-
-% --- MARGIN DIMENSIONS ---
-\frenchspacing \addtolength{\hoffset}{-1.5cm}
-\addtolength{\textwidth}{3cm} \addtolength{\voffset}{-2.5cm}
-\addtolength{\textheight}{4cm}
-\setlength{\headheight}{15pt}
-% --- MARGIN DIMENSIONS ---
-
-% --- HEADLINE ---
-\usepackage{fancyhdr}
-% Name of the subject this work is for
-\fancyhead[R]{* SUBJECT NAME *}\fancyhead[L]{\today}
-\fancyfoot[C]{\rule{1cm}{0.5mm}\\\thepage} \pagestyle{fancy}
-% --- HEADLINE ---
-
-
-
-% --- DOCUMENT ---
 \begin{document}
 
 % --- TITLE PAGE ---
-\begin{titlepage}
-  \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-  \centering
-
-  % --- SECONDARY TITLES ---
-   \textsc{}\\[0.25cm]
-
-   % Name of your university
-   \textsc{\huge{* UNIVERSITY *}}\\[0.5cm]
-
-   % Name of your faculty
-   \textsc{\LARGE * FACULTY *\\ ** FACULTY *}\\[0.3cm]
-
-   \begin{figure}[H]
-     % Replace this with your university logo
-     \centering
-     \subfloat{{\includegraphics[width=7cm]{Images/LogoUPM}}}
-     % Replace this with you faculty logo
-     \qquad
-     \subfloat{{\includegraphics[width=2.75cm]{Images/LogoFI}}}\\[0.5cm]
-   \end{figure}
-
-   % Name of the department to which the subject belongs.
-   \textsc{\Large * DEPARTMENT *}\\[0.25cm]
-
-   % Name of the subject
-   \textsc{\large * SUBJECT *}\\[0.25cm]
-  % --- SECONDARY TITLES ---
-
-  % --- MAIN TITLE ---
-   \HRule\\[0.4cm]
-
-   % Title of this work
-   {\huge\bfseries * TITLE *\\[0.4cm] * TITLE *}\\[0.4cm]
-   \HRule\\[1.25cm]
-
-   % --- SEMESTER and SCHOLAR YEAR ---
-    \textsc{\large XX YEAR | XXX SEMESTER}\\[1.5cm]
-   % --- SEMESTER and SCHOLAR YEAR
-
-   % --- AUTHORS ---
-    {\large\underline{\textit{Author/s:}}}\\[0.2cm]
-       \textsc{SURNAME, NAME}\\
-               Registration Number: XXXXXX\\[0.2cm]
-       % To add more authors, use this pattern
-       % \textsc{SURNAME, NAME}\\
-       %        Registration Number: XXXXXX\\[0.2cm]
-   % --- AUTHORS ---
-
-   % --- DATE ---
-    \vfill\vfill\vfill
-    {\large\today}
-   % --- DATE ---
-
-  % --- MAIN TITLE ---
-
-\end{titlepage}
+\include{include/cover}
 % --- TITLE PAGE ---
-
 
 \newpage
 % --- INDEX ---
@@ -110,10 +21,7 @@
 \newpage
 \pagenumbering{arabic}
 
-\section{Section 1}
-\subsection{Subsection 1}
-
-Here is where you write :D
+% Example of how to include a section on another file
+\include{sections/section1}
 
 \end{document}
-% --- DOCUMENT ---

@@ -1,0 +1,47 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,
+  % spanish, es-lcroman
+]{babel}
+
+\usepackage{setspace}
+\usepackage{amsfonts,amsgen,amsmath,amssymb}
+
+% --- DEPTH OF SECTIONS ---
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+% --- DEPTH OF SECTIONS ---
+
+
+% --- IMAGES ---
+\usepackage[pdftex]{graphicx}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{color}
+\DeclareGraphicsExtensions{.png,.jpg,.pdf,.mps,.gif,.bmp}
+% --- IMAGES ---
+
+% --- MARGIN DIMENSIONS ---
+\frenchspacing \addtolength{\hoffset}{-1.5cm}
+\addtolength{\textwidth}{3cm} \addtolength{\voffset}{-2.5cm}
+\addtolength{\textheight}{4cm}
+\setlength{\headheight}{1.5\headheight}
+% --- MARGIN DIMENSIONS ---
+
+% --- HEADLINE ---
+\usepackage{fancyhdr}
+\fancyhead[R]{\SubjectName}\fancyhead[L]{\today}
+\fancyfoot[C]{\rule{1cm}{0.5mm}\\\thepage} \pagestyle{fancy}
+% --- HEADLINE ---
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+% Enter the name/s of the author/s, the document title and his subject
+\usepackage[
+  pdftex,
+  pdfauthor={--- AUTHOR/S NAME ---},
+  pdftitle={--- DOC. TITLE ---},
+  pdfsubject={--- DOC. SUBJECT ---},
+  pdfborder={0 0 0}
+]{hyperref}
