@@ -1,0 +1,30 @@
+% The preambule includes the packages and parameters used on this document
+\include{include/student-info}
+
+\include{include/preambule}
+
+\begin{document}
+
+% --- TITLE PAGE ---
+\include{include/cover}
+% --- TITLE PAGE ---
+
+\newpage
+% --- INDEX ---
+\thispagestyle{empty}
+\pagenumbering{gobble}
+\renewcommand*\contentsname{Índice}
+\tableofcontents
+% --- INDEX ---
+\newpage
+
+\pagenumbering{arabic}
+
+\include*{sections/0-intro}
+\include*{sections/1-tasks}
+\include*{sections/2-tasksAndUni}
+\include*{sections/3-problemsAndSolutions}
+\include*{sections/4-knowledgeAcquired}
+\include*{sections/5-evaluation}
+
+\end{document}

@@ -1,0 +1,61 @@
+% -*-coding: utf-8 -*-
+\documentclass[11pt, a4paper, spanish]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage[
+  colorlinks = true,
+  linkcolor = black,
+  urlcolor  = blue,
+  citecolor = blue,
+  anchorcolor = blue,
+  pdfauthor={\Author},
+  pdftitle={\DocumentTitle},
+  pdfborder={0 0 0}]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+\usepackage{url}
+\usepackage[stable]{footmisc}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{amsfonts,amsgen,amsmath,amssymb}
+
+% Used to include section of different files avoiding the \clearpage of \include
+\usepackage{newclude}
+
+% Multicol package
+\usepackage{multicol}
+
+% Custom depth of section on Table of Contents
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+% Images packages
+\usepackage[pdftex]{graphicx}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{color}
+\DeclareGraphicsExtensions{.png,.jpg,.pdf,.mps,.gif,.bmp}
+
+% Margin of pages
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ right=20mm,
+ bottom=30mm,
+ left=20mm,
+ top=20mm,
+}
+
+% Header config.
+\usepackage{fancyhdr}
+\fancyhead[L]{\today}
+\fancyhead[R]{\ResearchGroup}
+\fancyfoot[C]{\rule{1cm}{0.5mm}\\\thepage} \pagestyle{fancy}
+\setlength{\headheight}{20pt}
+
+% Establish indentation (idk why doesn't work by default)
+\setlength\parindent{6mm}
+
+% Custom line for title
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
